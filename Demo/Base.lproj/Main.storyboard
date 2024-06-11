@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCw-WL-nlZ">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hhp-KS-fj3" userLabel="marquee" customClass="MarqueeView" customModule="Demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="Ffe-vy-bCw"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5sI-lG-As9" userLabel="banner" customClass="BannerView" customModule="Demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="155" width="393" height="393"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="5sI-lG-As9" secondAttribute="height" id="ZoU-v5-GSF"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6w6-XB-nY1" userLabel="category" customClass="CategoryView" customModule="Demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="553" width="393" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="Wod-hr-lF2"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMM-bi-lEi" userLabel="notification" customClass="NotificationView" customModule="Demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="858" width="393" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="CkK-1r-DxS"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S23-Xj-4pK" userLabel="campaign" customClass="CampaignView" customModule="Demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1013" width="393" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="toU-z1-sCq"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMG-Oj-gdW" userLabel="activities" customClass="ActivitiesView" customModule="Demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1168" width="393" height="300"/>
+                                        <color key="backgroundColor" systemColor="tintColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="VFd-lp-Kb7"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eR9-Wq-EWf" userLabel="products" customClass="ProductsView" customModule="Demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1473" width="393" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="ZOO-hJ-OBx"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySo-jJ-dYC" userLabel="recommend" customClass="RecommendView" customModule="Demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1628" width="393" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="T7F-96-qlI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ySo-jJ-dYC" firstAttribute="top" secondItem="eR9-Wq-EWf" secondAttribute="bottom" constant="5" id="3wx-w3-7Ap"/>
+                                    <constraint firstItem="CMG-Oj-gdW" firstAttribute="top" secondItem="S23-Xj-4pK" secondAttribute="bottom" constant="5" id="5IF-WR-gfa"/>
+                                    <constraint firstItem="Hhp-KS-fj3" firstAttribute="leading" secondItem="uCw-WL-nlZ" secondAttribute="leading" id="HNC-Zu-QSw"/>
+                                    <constraint firstItem="S23-Xj-4pK" firstAttribute="leading" secondItem="uCw-WL-nlZ" secondAttribute="leading" id="Hlm-YU-w1p"/>
+                                    <constraint firstItem="fMM-bi-lEi" firstAttribute="leading" secondItem="uCw-WL-nlZ" secondAttribute="leading" id="JUB-WF-jCx"/>
+                                    <constraint firstItem="5sI-lG-As9" firstAttribute="centerX" secondItem="uCw-WL-nlZ" secondAttribute="centerX" id="KHk-n1-km9"/>
+                                    <constraint firstItem="Hhp-KS-fj3" firstAttribute="centerX" secondItem="uCw-WL-nlZ" secondAttribute="centerX" id="NE2-YG-Vmr"/>
+                                    <constraint firstAttribute="trailing" secondItem="ySo-jJ-dYC" secondAttribute="trailing" id="QiO-xO-b0l"/>
+                                    <constraint firstItem="Hhp-KS-fj3" firstAttribute="top" secondItem="uCw-WL-nlZ" secondAttribute="top" id="UWi-Ec-dyY"/>
+                                    <constraint firstItem="eR9-Wq-EWf" firstAttribute="leading" secondItem="uCw-WL-nlZ" secondAttribute="leading" id="UX1-TF-VJL"/>
+                                    <constraint firstItem="6w6-XB-nY1" firstAttribute="leading" secondItem="uCw-WL-nlZ" secondAttribute="leading" id="WJl-jN-z3O"/>
+                                    <constraint firstAttribute="trailing" secondItem="fMM-bi-lEi" secondAttribute="trailing" id="XHH-uh-hUK"/>
+                                    <constraint firstItem="eR9-Wq-EWf" firstAttribute="top" secondItem="CMG-Oj-gdW" secondAttribute="bottom" constant="5" id="YgD-10-SX3"/>
+                                    <constraint firstAttribute="trailing" secondItem="S23-Xj-4pK" secondAttribute="trailing" id="aK3-ZZ-ydE"/>
+                                    <constraint firstItem="6w6-XB-nY1" firstAttribute="top" secondItem="5sI-lG-As9" secondAttribute="bottom" constant="5" id="aWe-X2-fNa"/>
+                                    <constraint firstItem="5sI-lG-As9" firstAttribute="leading" secondItem="uCw-WL-nlZ" secondAttribute="leading" id="cPc-Tc-ftp"/>
+                                    <constraint firstAttribute="trailing" secondItem="6w6-XB-nY1" secondAttribute="trailing" id="deh-bb-iob"/>
+                                    <constraint firstItem="5sI-lG-As9" firstAttribute="top" secondItem="Hhp-KS-fj3" secondAttribute="bottom" constant="5" id="eao-oL-t5w"/>
+                                    <constraint firstAttribute="trailing" secondItem="5sI-lG-As9" secondAttribute="trailing" id="i19-iL-qJw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hhp-KS-fj3" secondAttribute="trailing" id="i3w-wL-rjx"/>
+                                    <constraint firstItem="ySo-jJ-dYC" firstAttribute="leading" secondItem="uCw-WL-nlZ" secondAttribute="leading" id="iAa-qS-n94"/>
+                                    <constraint firstAttribute="trailing" secondItem="eR9-Wq-EWf" secondAttribute="trailing" id="iKt-Gf-gsw"/>
+                                    <constraint firstAttribute="trailing" secondItem="CMG-Oj-gdW" secondAttribute="trailing" id="nEV-r8-maV"/>
+                                    <constraint firstItem="CMG-Oj-gdW" firstAttribute="leading" secondItem="uCw-WL-nlZ" secondAttribute="leading" id="pV9-Hv-j0B"/>
+                                    <constraint firstItem="S23-Xj-4pK" firstAttribute="top" secondItem="fMM-bi-lEi" secondAttribute="bottom" constant="5" id="pYc-Vt-i5f"/>
+                                    <constraint firstItem="fMM-bi-lEi" firstAttribute="top" secondItem="6w6-XB-nY1" secondAttribute="bottom" constant="5" id="yBs-WG-Yu6"/>
+                                    <constraint firstAttribute="bottom" secondItem="ySo-jJ-dYC" secondAttribute="bottom" id="zOs-KF-80Q"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uCw-WL-nlZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0IV-cp-8yb"/>
+                            <constraint firstItem="uCw-WL-nlZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="L9Z-K7-9Dl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uCw-WL-nlZ" secondAttribute="bottom" id="NUs-fe-se6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uCw-WL-nlZ" secondAttribute="trailing" id="rR9-Ih-7gc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activitiesV" destination="CMG-Oj-gdW" id="JpI-vu-L7j"/>
+                        <outlet property="activitiesVHeigh" destination="VFd-lp-Kb7" id="xR9-SO-ubv"/>
+                        <outlet property="bannerV" destination="5sI-lG-As9" id="gRj-Hp-udI"/>
+                        <outlet property="campagnVHeigh" destination="toU-z1-sCq" id="7Jo-54-bYr"/>
+                        <outlet property="campaignV" destination="S23-Xj-4pK" id="FGU-xK-eZ5"/>
+                        <outlet property="categoryV" destination="6w6-XB-nY1" id="UW2-wc-wa7"/>
+                        <outlet property="categoryVHeigh" destination="Wod-hr-lF2" id="WoZ-CL-1Xg"/>
+                        <outlet property="marqueeV" destination="Hhp-KS-fj3" id="1Z0-8i-3cz"/>
+                        <outlet property="myScrollView" destination="uCw-WL-nlZ" id="wsG-RR-oiM"/>
+                        <outlet property="notificationV" destination="fMM-bi-lEi" id="FBX-qW-kgS"/>
+                        <outlet property="productsV" destination="eR9-Wq-EWf" id="ruA-DF-jx6"/>
+                        <outlet property="recommendV" destination="ySo-jJ-dYC" id="qpz-lG-saL"/>
+                        <outlet property="recommendVHeigh" destination="T7F-96-qlI" id="yAH-pM-I3x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166" y="-45"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
